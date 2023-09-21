@@ -9,6 +9,10 @@ func Mod(num1 float64, num2 float64) float64 {
 	return math.Mod(num1, num2)
 }
 
+func Power(num1 float64, num2 float64) float64 {
+	return math.Pow(num1, num2)
+}
+
 func main() {
 	var num1, num2 float64
 	var operator string
@@ -46,7 +50,7 @@ func main() {
 			return
 		}
 	case "^":
-		result = Power() // Abujar TODO
+		result = Power(num1, num2) // Abujar Shaikh
 	default:
 		fmt.Println("Error: Invalid operator")
 		return
