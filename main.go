@@ -13,6 +13,10 @@ func Power(num1 float64, num2 float64) float64 {
 	return math.Pow(num1, num2)
 }
 
+func division(num1 float64, num2 float64) float64 {
+	return num1 / num2
+}
+
 func main() {
 	var num1, num2 float64
 	var operator string
@@ -37,7 +41,7 @@ func main() {
 		result = multiply() // Abhijeet TODO
 	case "/":
 		if num2 != 0 {
-			result = divison() // Zubiyan TODO
+			result = divison(num1, num2) // Mohammad Zubiyan Shaikh
 		} else {
 			fmt.Println("Error: Division by zero.")
 			return
