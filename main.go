@@ -25,6 +25,14 @@ func multiply(num1 float64, num2 float64) float64 {
 	return num1 / num2
 }
 
+func Equal(num1 float64, num2 float64) float64 {
+	if num1 == num2 {
+		return 1.0
+	} else {
+		return 0.0
+	}
+}
+
 func main() {
 	var num1, num2 float64
 	var operator string
@@ -63,6 +71,9 @@ func main() {
 		}
 	case "^":
 		result = Power(num1, num2) // Abujar Shaikh
+		
+	case "=":
+		result = Equal(num1, num2) // Harshpreet Kaur
 	default:
 		fmt.Println("Error: Invalid operator")
 		return
