@@ -21,6 +21,10 @@ func subtract(num1 float64, num2 float64) float64 {
 	return num1 - num2
 }
 
+func addition(num1 float64, num2 float64) float64 {
+	return num1 + num2
+}
+
 func multiply(num1 float64, num2 float64) float64 {
 	return num1 / num2
 }
@@ -40,7 +44,7 @@ func main() {
 	fmt.Print("Enter the first number: ")
 	fmt.Scanln(&num1)
 
-	fmt.Print("Enter an operator (+, -, *, /, %, ^): ")
+	fmt.Print("Enter an operator (+, -, *, /, %, ^, =): ")
 	fmt.Scanln(&operator)
 
 	fmt.Print("Enter the second number: ")
@@ -50,7 +54,7 @@ func main() {
 
 	switch operator {
 	case "+":
-		result = addition() // DHIRAJ TODO
+		result = addition(num1, num2) // DHIRAJ TODO
 	case "-":
 		result = subtract(num1, num2) // Randeep TODO
 	case "*":
