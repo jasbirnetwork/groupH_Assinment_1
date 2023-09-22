@@ -17,6 +17,10 @@ func division(num1 float64, num2 float64) float64 {
 	return num1 / num2
 }
 
+func multiply(num1 float64, num2 float64) float64 {
+	return num1 / num2
+}
+
 func main() {
 	var num1, num2 float64
 	var operator string
@@ -38,7 +42,7 @@ func main() {
 	case "-":
 		result = subtract() // Randeep TODO
 	case "*":
-		result = multiply() // Abhijeet TODO
+		result = multiply(num1, num2) // Abhijeet TODO
 	case "/":
 		if num2 != 0 {
 			result = divison(num1, num2) // Mohammad Zubiyan Shaikh
